@@ -16,7 +16,7 @@ module Resolvers
         body: (1..3).map { "Some interesting text." }.join("\n\n"),
         author: "Merlin",
         comments: [
-          { 
+          {
             title: "Good post",
             body: "lov this"
           }
@@ -25,4 +25,3 @@ module Resolvers
     end
   end
 end
-

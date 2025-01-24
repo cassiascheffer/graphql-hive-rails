@@ -6,6 +6,6 @@ module Types
     field :title, String
     field :body, String
     field :author, String
-    field :comments, [Types::CommentType]
+    field :comments, [ Types::CommentType ]
   end
 end

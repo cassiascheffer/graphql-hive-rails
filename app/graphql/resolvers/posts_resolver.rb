@@ -1,9 +1,9 @@
 
 module Resolvers
   class PostsResolver < GraphQL::Schema::Resolver
-    type [Types::PostType], null: false
+    type [ Types::PostType ], null: false
 
-    argument :ids, [ID], required: true
+    argument :ids, [ ID ], required: true
 
     def resolve(ids:)
       fake_posts(ids)
@@ -17,7 +17,7 @@ module Resolvers
           body: (1..3).map { "Some interesting text." }.join("\n\n"),
           author: "Merlin",
           comments: [
-            { 
+            {
               title: "Good post",
               body: "lov this"
             }
@@ -29,7 +29,7 @@ module Resolvers
           body: (1..3).map { "Some interesting text." }.join("\n\n"),
           author: "Merlin",
           comments: [
-            { 
+            {
               title: "Gooder post",
               body: "loveeee this"
             }
